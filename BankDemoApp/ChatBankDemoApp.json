@@ -1,0 +1,358 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "ChatBankDemoApp",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "Accounts"
+    },
+    {
+      "name": "Communication.Hello"
+    },
+    {
+      "name": "Communication.StartOver",
+      "inherits": {
+        "domain_name": "Communication",
+        "model_name": "StartOver"
+      }
+    },
+    {
+      "name": "New Account"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Account"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [
+    "age",
+    "datetimeV2",
+    "dimension",
+    "email",
+    "money",
+    "number",
+    "temperature",
+    "url"
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "\" please , restart now \"",
+      "intent": "Communication.StartOver",
+      "entities": []
+    },
+    {
+      "text": "/start",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "account",
+      "intent": "New Account",
+      "entities": []
+    },
+    {
+      "text": "accounts",
+      "intent": "Accounts",
+      "entities": []
+    },
+    {
+      "text": "adsfasdf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "asdaf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "asdasd",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "asdjkfkbwerf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "balance in the credit card account",
+      "intent": "Accounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 15,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "buenas",
+      "intent": "Communication.Hello",
+      "entities": []
+    },
+    {
+      "text": "check account balance",
+      "intent": "Accounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 6,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "create a new account",
+      "intent": "New Account",
+      "entities": []
+    },
+    {
+      "text": "create a new credit account",
+      "intent": "New Account",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 13,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "create a new credit card account",
+      "intent": "New Account",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 13,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "create a new savings account",
+      "intent": "New Account",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 13,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "create new credit account",
+      "intent": "New Account",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 11,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "create new savings account",
+      "intent": "New Account",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 11,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "do it all over again ?",
+      "intent": "Communication.StartOver",
+      "entities": []
+    },
+    {
+      "text": "get out of the call",
+      "intent": "Communication.StartOver",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "Communication.Hello",
+      "entities": []
+    },
+    {
+      "text": "hello!",
+      "intent": "Communication.Hello",
+      "entities": []
+    },
+    {
+      "text": "help me create a new account",
+      "intent": "New Account",
+      "entities": []
+    },
+    {
+      "text": "help me create a new savings account",
+      "intent": "New Account",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 21,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "hi",
+      "intent": "Communication.Hello",
+      "entities": []
+    },
+    {
+      "text": "hi!",
+      "intent": "Communication.Hello",
+      "entities": []
+    },
+    {
+      "text": "hola :)",
+      "intent": "Communication.Hello",
+      "entities": []
+    },
+    {
+      "text": "hola!",
+      "intent": "Communication.Hello",
+      "entities": []
+    },
+    {
+      "text": "i ' ll start again",
+      "intent": "Communication.StartOver",
+      "entities": []
+    },
+    {
+      "text": "i want a new account",
+      "intent": "New Account",
+      "entities": []
+    },
+    {
+      "text": "i want a new savings account",
+      "intent": "New Account",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 13,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "let ' s try this whole thing over",
+      "intent": "Communication.StartOver",
+      "entities": []
+    },
+    {
+      "text": "list account",
+      "intent": "Accounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 5,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "list accounts",
+      "intent": "Accounts",
+      "entities": []
+    },
+    {
+      "text": "movements in the savings account",
+      "intent": "Accounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 17,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "new account",
+      "intent": "New Account",
+      "entities": []
+    },
+    {
+      "text": "new accounts",
+      "intent": "New Account",
+      "entities": []
+    },
+    {
+      "text": "new credit account",
+      "intent": "New Account",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 4,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "new mortgage account",
+      "intent": "New Account",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 4,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "open account",
+      "intent": "New Account",
+      "entities": []
+    },
+    {
+      "text": "restart now",
+      "intent": "Communication.StartOver",
+      "entities": []
+    },
+    {
+      "text": "sadfasdf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sadfsadfs",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "see account",
+      "intent": "Accounts",
+      "entities": []
+    },
+    {
+      "text": "see account balance",
+      "intent": "Accounts",
+      "entities": [
+        {
+          "entity": "Account",
+          "startPos": 4,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "show account",
+      "intent": "Accounts",
+      "entities": []
+    }
+  ]
+}
